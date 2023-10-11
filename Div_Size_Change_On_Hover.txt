@@ -1,0 +1,55 @@
+Yani jab hum card box pr hover krain ga tu card ka size change ho ga aisa effect ay ga ka top/bottom donon size sa card size pr affect a raha
+import './../Components_CC/Home.css'
+function Home()
+{
+    return <>
+    <div className="Container">
+    <div className='Card'>
+     <div className='CardImage'>Image</div>
+     <h5 className='CardTitle'>Card Item</h5>
+     <p className='CardDescription'>Hello this is a pragrapgh in which explanation is given.</p>
+    </div>
+    <div className='Card'>
+     <div className='CardImage'>Image</div>
+     <h5 className='CardTitle'>Card Item</h5>
+     <p className='CardDescription'>Hello this is a pragrapgh in which explanation is given.</p>
+    </div>
+    <div className='Card'>
+     <div className='CardImage'>Image</div>
+     <h5 className='CardTitle'>Card Item</h5>
+     <p className='CardDescription'>Hello this is a pragrapgh in which explanation is given.</p>
+    </div>
+
+    </div>
+    </>
+}
+export default Home;
+
+
+
+--------------------------------------------------------
+.Container{
+    align-items: center;
+    border: 1px solid rgb(0, 81, 255);
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Card{
+    border-radius: 17px;
+    box-shadow: 1px 1px red;
+    padding: 14px;
+    border: 1px solid red;
+    height: 300px;
+    transition: height 0.5s;
+    transition-timing-function:cubic-bezier(.17,.67,.83,.67);;
+}
+.CardImage,.CardTitle,.CardDescription{
+   text-align: center;
+}
+.Card{
+    background-color: aqua;
+}
+.Card:hover{
+    height: 500px;
+}
