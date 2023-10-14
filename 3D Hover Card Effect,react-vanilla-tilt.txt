@@ -1,0 +1,55 @@
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import './../Components_CC/Home.css';
+import Tilt from 'react-vanilla-tilt';
+
+function Home() {
+  return (
+    <Container className='Container' fluid>
+      <Row>
+   <Tilt className='Card'
+        options={{    perspective:       1000,max:40 , easing: 'cubic-bezier(1,1,1,1)',speed:500, }}
+      >          <h1 className='Title'>Library System</h1>
+          <p className='Description'>Hello, this is a little word and I am using this world. What are you doing? This is a really heavy-coded thing and you are a part of this world.</p>
+      </Tilt> 
+      <Tilt className='Card'
+        options={{ easing: 'cubic-bezier(.03,.98,.52,.99)' }}
+      >
+          <h1 className='Title'>Library System</h1>
+          <p className='Description'>Hello, this is a little word and I am using this world. What are you doing? This is a really heavy-coded thing and you are a part of this world.</p>
+      </Tilt>
+      <Tilt className='Card'
+        options={{ easing: 'cubic-bezier(.03,.98,.52,.99)' }}
+      >
+          <h1 className='Title'>Library System</h1>
+          <p className='Description'>Hello, this is a little word and I am using this world. What are you doing? This is a really heavy-coded thing and you are a part of this world.</p>
+      </Tilt>  
+    </Row>
+    </Container>
+  );
+}
+
+export default Home;
+
+
+
+Home.css
+.Container {
+    background-color: blue;
+  }
+  
+.Card{
+border: 5px solid black;
+box-shadow: 0px 0px 3px rgb(171, 172, 127);
+height: 400px;
+width: 200px;
+border-radius: 20px;
+background-color: rgb(255, 0, 0,0.7) !important;
+}
+.Title{
+color: aliceblue;
+}
+.Description{
+color: wheat;
+}
